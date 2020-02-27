@@ -6,7 +6,7 @@ all credet to them-->
 <!--This work, "KA P.JS", is a derivative of "http://stackoverflow.com/questions/25341597/how-can-khan-academy-computer-programs-be-run-offline-or-on-my-own-website " by Robert Tupelo-Schneck(http://stackoverflow.com/users/394431/robert-tupelo-schneck), used under CC BY. "KA P.JS" is by michael basaj(https://www.khanacademy.org/profile/michaelbasaj/).-->
 <html>
 <head>
-    <title>Voluntold 3.21</title>
+    <title>Voluntold 3.21 BETA</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.4.8/processing.min.js"></script>
 </head>
     <style>
@@ -125,16 +125,15 @@ var mainButton = new Button({x:20,y:530,text:"Main Menu"});
 }
 
 //Has the different arrays of each class
-var choices = {
-    firstHour:[" Tristen"," Rylee"," Blaze"," Pawel"," Sam"," Nicole"," Lauren"," Kevin"," Irene"," Amaya"," Theron"," Nick K"," Isabel"," Kailee"," Ryan M"," Jackson"," Isabella"," Sophia"," Zach"," Jacob"," Julia"," Abigail"," Riahna"," Isabela"," Elaina"," Diego", " 🌽", " 🐝anne"],
-    secondHour:[" Niles"," Avery"," Destiny"," Emma"," Analicia"," Joy"," Audry"," Brynn"," Colin"," Davin"," Fruity K"," MK"," Kylie"," Jackson"," Corinne"," Brookelyn"," Jenna"," Jennifer"," Tony"," Jayda"," Ben"," Charlie"," Anna"," Alexis"],
-    thirdHour:[" Will"," Logan"," Toni"," Dominic"," Jessica"," Cole"," Matt L"," DeAndre"," Jayden"," Claudia"," Ethan"," Megan"," McKaylah"," Thea"," Cole R"," Leah"," Blake"," Dylan"," Lexus"," Sophia"," Katie"," Caitlyn"," Owen"," Makayla"," Kylin"," Abby"," Conner"," Jason"," Hayley W"],
-    fourthHour:[" Nick H"," Maya B."," Nick 🐝"," Heidi"," Adam"," Logan"," Nathan"," Karina"," Marcus"," Ally"," Gun🐝"," Daniel"," Jack"," Jill"," Van"," Bryce"," Hai🐝"," Chloe"," sheepman39©"," Hannah"," Michael"," Cheyenne"," Espi"," Jeremiah"," Olivia"," Ashlyn"," Meg🐝"],
-    fifthHour:[" Gannon"," Eduardo"," Landen"," Mattea"," Kayla"," Naturelle"," Malia"," Nick C"," Noah"," Delaney"," Jenna"," Maddy"," Lucy"," Matt"," Austin"," Nick H"," Nick K"," Alex"," Caitlyn"," Nick M"," Zach"," Abby O"," Owen"," Anthony"," Garret"," Mia"," Michael"," Samantha"," Mariah"," Steven"],
-    seventhHour:[" Jaden H.", " Yumi"," Julian S"," Nyemah"," Bridget"," Jax"," Jacob"," Nevaeh"," Nick"," Kyle"," Josh"," Savanna"," Alex"," Amanda"," Sarah"," Aidan"," Xavier"," Julian R"," Julia"," Tyler"," Kyle"," Lauren"," Anthony"," Emma"," Elizabeth"," Ryan"," Zach Z"],
-    extra:[]
-    
-};
+var choices = {																															
+	firstHour:[	" Tristen",	" Rylee",	" Blaze",	" Pawel",	" Samantha",	" Sarah",	" Nicole",	" Lauren",	" Irene",	" Amaya",	" Theron",	" Nicholas",	" Isabel",	" Breanne",	" Kailee",	" Ryan",	" Jackson",	" Isabella",	" Sophia",	" Zachary",	" Jacob",	" Julia",	" Abigail",	" Riahna",	" Isabela",	" Elaina",	" Diego",			],
+	secondHour:[	" Alexis",	" Analicia",	" Anna",	" Anthony",	" Audry",	" Avery",	" Benjamin",	" Brookelyn",	" Brynn",	" Charlie",	" Colin",	" Corinne",	" Davin",	" Emma",	" Jackson",	" Jayda",	" Jenna",	" Jennifer",	" Joy",	" Kylie",	" Madison",	" Madison",	" Niles",							],
+	thirdHour:[	" Abigail",	" Blake",	" Caitlyn",	" Claudia",	" Cole",	" Cole",	" Conner",	" DeAndre",	" Dominic",	" Dylan",	" Eramathea",	" Ethan",	" Hayley",	" Jason",	" Jessica",	" Katie",	" Kylin",	" Leah",	" Lexus",	" Makayla",	" Matthew",	" McKaylah",	" Megan",	" Owen",	" Sophia",	" Toni",	" William",			],
+	fourthHour:[	" Adam",	" Allison",	" Ashlyn",	" Bryce",	" Cheyenne",	" Chloe",	" Daniel",	" Esperanza",	" Gunnar",	" Hailey",	" Hannah",	" Heidi",	" Jack",	" Jeremiah",	" Jillian",	" Johnathan",	" Karina",	" Logan",	" Marcus",	" Maya",	" Megan",	" Michael",	" Nathan",	" Nicholas",	" Nicholas",	" Olivia",	" Van",			],
+	fifthHour:[	" Abigail",	" Alexandra",	" Anthony",	" Austin",	" Caitlyn",	" Delaney",	" Eduardo",	" Gannan",	" Garret",	" Jenna",	" Landen",	" Lucy",	" Madison",	" Malia",	" Mariah",	" Mattea",	" Matthew",	" Mia",	" Michael",	" Naturelle",	" Nicholas",	" Nicholas",	" Nicholas",	" Nicholas",	" Noah",	" Owen",	" Samantha",	" Steven",	" Zachary",	],
+	seventhHour:[	" Aidan",	" Alexander",	" Amanda",	" Anthony",	" Bridget",	" Elizabeth",	" Emma",	" Jacob",	" Jaden",	" Jax",	" Joshua",	" Julia",	" Julian",	" Julian",	" Kayla",	" Kyle",	" Kyle",	" Lauren",	" Nevaeh",	" Nickolas",	" Nyemah",	" Ryan",	" Sarah",	" Savanna",	" Tyler",	" Xavier",	" Yumi",	" Zachary",		],
+	extra:[]																														
+};																															
 
 var show = function(hour,name){
     restartButton.draw();
